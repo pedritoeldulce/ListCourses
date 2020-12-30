@@ -1,11 +1,13 @@
-export default class Curso {
-    constructor(nombre, poster, capitulos, subcapitulos, descripcion, repositorio="https://github.com/pedritoeldulce"){
-        this.nombre = nombre
-        this.poster = poster
-        this.capitulos = capitulos
-        this.subcapitulos = subcapitulos
-        this.descripcion = descripcion
-        this.repositorio =repositorio
+import Video from "./Video.js"
+
+export default class Curso extends Video{
+    constructor(url, descripcion, nombre, poster, capitulos, subcapitulos, repositorio="https://github.com/pedritoeldulce"){
+        super(url, descripcion)
+        this.nombre=nombre
+        this.poster=poster
+        this.capitulos=capitulos
+        this.subcapitulos=subcapitulos
+        this.repositorio=repositorio
         /* Estamos mandando un repositorio por defecto a todos los cursos "https://github.com/pedritoeldulce" */
     }
 
@@ -35,13 +37,6 @@ export default class Curso {
     }
     setSubcapitulos(nuevoSubcapitulos){
         this.subcapitulos=nuevoSubcapitulos
-    }
-
-    getDescripcion(){
-        return this.descripcion
-    }
-    setDescripcion(nuevaDescripcion){
-        this.descripcion=nuevaDescripcion
     }
 
     getRepositorio(){

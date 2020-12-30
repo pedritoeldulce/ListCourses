@@ -9,17 +9,19 @@ Cada curso tendrá un números de clases (capítulo), y cada clase está compues
 
 
 ## Clases
-     * Curso
-     ** Free
-     ** Pago
+     * Video
+     ** curso
 
 
 ## Atributos 
+
+     * Video:
+          ** Dirección/URL
+          ** Descripcion
+
      * Curso:
           ** Nombre
           ** Poster
           ** Capitulos
           ** Subcapítulos
-          ** Descripción
           ** Repositorio
-          *** Free/paga
