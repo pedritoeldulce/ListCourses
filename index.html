@@ -12,6 +12,34 @@
 
     <div class="ed-grid">
         <h1>Cursos de Noa</h1>
+        <form id="formCursos">
+            <div class="ed-grid m-grid-4">
+                <div class="form-item">
+                    <label >
+                        Nombre:
+                        <input type="text" name="nombreCurso" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label >
+                        Poster:
+                        <input type="text" name="poster" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label >
+                        Clases:
+                        <input type="number" min="1" name="clases" required>
+                    </label>
+                </div>
+                <div class="form-item m-pt-2">
+                    <label >
+                        <input class="button" type="submit" value="Crear Curso">
+                    </label>
+                </div>
+            </div>
+        </form>
+
     </div>
     <div class="ed-grid m-grid-4 s-grid-2 m-center s-center row-gap" id="cursos">
     </div>
